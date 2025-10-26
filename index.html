@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мій університет UTM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">UTM — демо-сторінка</div>
+    </div>
+
+    <div class="container">
+      <h1>Мій університет UTM</h1>
+
+      <img class="hero logo" src="utm1.png" alt="UTM logo" />
+
+      <p>Я вчусь на факультеті прикладної інформатики в UTM. Це чудовий університет у Кишиневі, Молдова. 
+        Якщо ти хочеш дізнатися більше, відвідай їхній <a href="https://utm.md" target="_blank" rel="noopener">офіційний сайт</a>. 
+        Для подачі докуменів заповни бланк нижче.</p>
+
+      <h2>Форма студента</h2>
+      <form id="form" autocomplete="on" novalidate>
+        <label for="name">
+          Ім’я та прізвище
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Наприклад: Іван Петренко"
+            required
+          />
+        </label>
+
+        <label for="group">
+          Група
+          <input
+            id="group"
+            name="group"
+            type="text"
+            placeholder="Наприклад: TI-231"
+            required
+          />
+        </label>
+
+        <label for="faculty">
+          Факультет
+          <select id="faculty" name="faculty">
+            <option value="FAF — Інформатика">FAF — Інформатика</option>
+            <option value="FIEB — Електроніка">FIEB — Електроніка</option>
+            <option value="FIMIT — Машинобудування">FIMIT — Машинобудування</option>
+            <option value="FUA — Архітектура">FUA — Архітектура</option>
+          </select>
+        </label>
+
+        <label for="about">
+          Про себе
+          <textarea
+            id="about"
+            name="about"
+            rows="4"
+            placeholder="Кілька слів про інтереси"
+          ></textarea>
+        </label>
+
+        <button type="submit">Показати</button>
+        <div class="note">Поля «Ім’я та прізвище» і «Група» — обов’язкові.</div>
+      </form>
+
+      <h2>Результат</h2>
+      <div id="result">Заповни форму та натисни «Показати».</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
